@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  alloraworker:
+    image: alloraworker
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
